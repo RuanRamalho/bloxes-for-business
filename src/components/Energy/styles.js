@@ -2,6 +2,13 @@ import styled from 'styled-components';
 import { fontSizes, colors, media } from '../../tokens';
 
 export const CarouselContent = styled.div`
+  margin-bottom: 80px;
+
+  a {
+    text-decoration: none;
+    color: ${colors.dark};
+  }
+
   .splide__arrows {
     opacity: 0;
   }
@@ -20,8 +27,8 @@ export const ImageContent = styled.div`
     height: 100%;
   }
 
-  ${media.xl} {
-    height: 350px;
+  ${media.lg} {
+    height: 200px;
   }
 `;
 

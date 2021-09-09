@@ -33,7 +33,7 @@ const Energy = () => {
           breakpoints: {
             600: {
               perPage: 1,
-              fixedWidth: '20rem',
+              fixedWidth: '15rem',
               arrows: false,
             },
 
@@ -43,15 +43,19 @@ const Energy = () => {
             },
 
             1024: {
-              fixedWidth: '25rem',
+              fixedWidth: '16rem',
+            },
+
+            1366: {
+              fixedWidth: '19rem',
             },
 
             1980: {
-              fixedWidth: '35rem',
+              fixedWidth: '23rem',
             },
 
             2560: {
-              fixedWidth: '45rem',
+              fixedWidth: '22rem',
             },
           },
         }}
@@ -59,17 +63,19 @@ const Energy = () => {
         {notices.map((item) => (
           <>
             <SplideSlide>
-              <ImageContent>
-                <div className="splide__slide__container">
-                  <Image
-                    src={item._embedded['wp:featuredmedia'][0].source_url}
-                  />
-                </div>
-              </ImageContent>
-              <DescriptionContent>
-                <h3>{item.title.rendered}</h3>
-                <p>{item.date}</p>
-              </DescriptionContent>
+              <a href={item.link} target="_blank" rel="noreferrer">
+                <ImageContent>
+                  <div className="splide__slide__container">
+                    <Image
+                      src={item._embedded['wp:featuredmedia'][0].source_url}
+                    />
+                  </div>
+                </ImageContent>
+                <DescriptionContent>
+                  <h3>{item.title.rendered}</h3>
+                  <p>{item.date}</p>
+                </DescriptionContent>
+              </a>
             </SplideSlide>
           </>
         ))}
