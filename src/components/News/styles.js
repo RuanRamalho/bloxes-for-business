@@ -5,7 +5,7 @@ export const NewsContent = styled.div`
   background: ${colors.white};
   padding: 40px;
   border-radius: 8px;
-  margin-top: 40px;
+  margin: 40px 0;
 
   h1 {
     font-size: ${fontSizes.xlarge}px;
