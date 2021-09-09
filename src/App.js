@@ -1,12 +1,12 @@
 import React from 'react';
 import GlobalStyle from './theme/globalStyles';
-import Energy from './components/Energy';
+import News from './components/News';
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Energy />
+      <News />
     </>
   );
 }
