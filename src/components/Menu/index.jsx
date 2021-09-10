@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   MenuContent,
+  MenuList,
   LogoContent,
   HomeContent,
   EntrepreneurContent,
@@ -32,10 +33,10 @@ const Menu = () => (
     <HomeContent>
       <ul>
         <a href="#">
-          <li>
+          <MenuList>
             <Home />
             Home
-          </li>
+          </MenuList>
         </a>
       </ul>
     </HomeContent>
@@ -43,40 +44,40 @@ const Menu = () => (
       <ul>
         <h2>área do empreendedor</h2>
         <a href="#">
-          <li>
+          <MenuList>
             <Dashboard />
             Dashboard
-          </li>
+          </MenuList>
         </a>
         <a href="#">
-          <li>
+          <MenuList>
             <Enterprise />
             Empresas
-          </li>
+          </MenuList>
         </a>
         <a href="#">
-          <li>
+          <MenuList>
             <Projects />
             Projetos
-          </li>
+          </MenuList>
         </a>
         <a href="#">
-          <li>
+          <MenuList>
             <Chat />
             Chat
-          </li>
+          </MenuList>
         </a>
         <a href="#">
-          <li>
+          <MenuList>
             <Earnings />
             Proventos
-          </li>
+          </MenuList>
         </a>
         <a href="#">
-          <li>
+          <MenuList>
             <Indications />
             Indicações
-          </li>
+          </MenuList>
         </a>
       </ul>
     </EntrepreneurContent>
@@ -84,29 +85,29 @@ const Menu = () => (
       <ul>
         <h2>comunidade</h2>
         <a href="#">
-          <li>
+          <MenuList>
             <Forum /> Fórum
-          </li>
+          </MenuList>
         </a>
         <a href="#">
-          <li>
+          <MenuList>
             <Academy /> Academy
-          </li>
+          </MenuList>
         </a>
         <a href="#">
-          <li>
+          <MenuList>
             <Calendary /> Eventos
-          </li>
+          </MenuList>
         </a>
         <a href="#">
-          <li>
+          <MenuList active>
             <News /> Notícias
-          </li>
+          </MenuList>
         </a>
         <a href="#">
-          <li>
+          <MenuList>
             <Services /> Services
-          </li>
+          </MenuList>
         </a>
       </ul>
     </CommunityContent>

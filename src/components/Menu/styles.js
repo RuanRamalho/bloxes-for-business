@@ -32,6 +32,8 @@ export const MenuContent = styled.div`
 
 
   ul {
+    width: 100%;
+
     h2 {
       color: #4c4e70;
       font-size: ${fontSizes.medium}px;
@@ -47,7 +49,11 @@ export const MenuContent = styled.div`
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-bottom: 15px;
+      padding: 10px;
+
+      &:hover {
+        background: ${colors.primary};
+      }
     }
   }
 
@@ -59,7 +65,11 @@ export const MenuContent = styled.div`
   ${media.xxl} {
     width: 25%;
   }
+`;
 
+export const MenuList = styled.li`
+  background: ${(props) => (props.active ? colors.primary : 'none')};
+  color: ${(props) => (props.active ? colors.white : 'none')};
 `;
 
 export const LogoContent = styled.div`
@@ -116,7 +126,7 @@ export const MenuButtonContent = styled.div`
 
   ${media.xl} {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
   }
 `;
