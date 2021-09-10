@@ -1,13 +1,14 @@
 import React from 'react';
 import GlobalStyle from './theme/globalStyles';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
+import News from './components/News';
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <h1>Olá!</h1>
-      {console.log('Olá')}
+      <Header />
+      <News />
     </>
   );
 }
