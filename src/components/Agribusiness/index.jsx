@@ -47,15 +47,15 @@ const Energy = () => {
             },
 
             1366: {
-              fixedWidth: '19rem',
+              fixedWidth: '14rem',
             },
 
             1980: {
-              fixedWidth: '23rem',
+              fixedWidth: '17rem',
             },
 
             2560: {
-              fixedWidth: '22rem',
+              fixedWidth: '17rem',
             },
           },
         }}
