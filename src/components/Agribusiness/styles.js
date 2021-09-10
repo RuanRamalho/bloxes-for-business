@@ -25,7 +25,11 @@ export const ImageContent = styled.div`
   }
 
   ${media.lg} {
-    height: 200px;
+    height: 150px;
+  }
+
+  ${media.xl} {
+    height: 170px;
   }
 `;
 

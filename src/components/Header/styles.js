@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors, fontSizes } from '../../tokens';
+import { colors, fontSizes, media } from '../../tokens';
 
 export const HeaderContent = styled.div`
   background: ${colors.white};
@@ -7,6 +7,10 @@ export const HeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  ${media.lg} {
+    margin-left: 25%;
+  }
 `;
 
 export const HeaderTitle = styled.div`
